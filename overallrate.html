@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Overall Ratings | RateMyCourses</title>
+    <link rel= "stylesheet" href = "styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="images/spirit-v-orange.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .review {
+            border: 7px dotted white;
+            padding: 10px;
+            margin-top: 105px;
+            margin-bottom: 50px;
+            margin-left: 300px;
+            max-width: 800px;
+            
+        }
+
+        h3 {
+            margin-bottom: 5px;
+            background-color: #cb4900;
+            color:white;
+            border: white 1px solid;
+            border-radius: 10px;
+            padding:5px;
+        }
+
+        p {
+            margin: 10px;
+            background-color: #cb4900;
+            color:white;
+            border: white 1px solid;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "heading">
+            <img src = "images/images.svg" width = "206" length = "60">
+            <h1>RateMyCourses</h1>
+            <img class="search-icon" src = "images/download.svg" width = "32" length = "30">
+        </div>
+        <ul class = "nav-bar">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "rate.html">Rate Your Course</a></li>
+            <li><a class="active" href = "overallrate.html">Overall Ratings</a></li>
+            <li><a href = "contactUs.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <h2>College Course Reviews</h2>
+    <a><CourseRating class="html"></CourseRating></a>
+
+    <div id="reviewsContainer"></div>
+    <a><CourseRating class="html"></CourseRating></a>
+
+    <script>
+        // Dummy data for demonstration purposes
+        const reviewsData = [
+            {
+                courseName: "Introduction to Computer Science",
+                Instructor: "John Doe",
+                Rating: "4",
+                Difficulty: "4",
+                review: "This course was informative and well-organized. The instructor was knowledgeable and engaging."
+            },
+            {
+                courseName: "Computer Science 1",
+                Instructor: "Mark Johnson",
+                Rating: "4",
+                Difficulty: "3",
+                review: "This course informs me well about the fundamentals of c++. The labs are engaging as well and really help me practie my coding skills."
+            },
+            {
+                courseName: "General Chemistry 1",
+                Instructor: "Frida Johnson",
+                Rating: "4",
+                Difficulty: "3",
+                review: "Although I am not much of a chemistry person, the math involved helps me pass this course. The sessions in class don't help me as much as they should but the PLTL periods after class help me much more."
+            },
+            // Add morereviews as needed 
+        ];
+
+        // Function to generate HTML for a review
+        function generateReviewHTML(review) {
+            return `
+                <div class="review">
+                    <h3>${review.courseName}</h3>
+                    <p><strong>Instructor:</strong> ${review.Instructor}</p>
+                    <p><strong>Rating:</strong> ${review.Rating}<p>
+                    <p><strong>Difficulty:</strong> ${review.Difficulty}</p>
+                    <p><strong>Review:</strong> ${review.review}</p>
+                </div>
+            `;
+        }
+
+        // Function to display reviews
+        function displayReviews() {
+            const reviewsContainer = document.getElementById("reviewsContainer");
+
+            // Clear existing content
+            reviewsContainer.innerHTML = "";
+
+            // Generate HTML for each review and append to the container
+            reviewsData.forEach(review => {
+                const reviewHTML = generateReviewHTML(review);
+                reviewsContainer.innerHTML += reviewHTML;
+            });
+        }
+
+        // Display reviews on page load
+        displayReviews();
+    </script>
+
+    <footer>
+        Copyright &copy; CSCI 1101 Jonathan Frias and Reyes Morales
+    </footer>
+</body>
+</html>

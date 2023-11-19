@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image:url('images/utrgv-umc-background5.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+header {
+    width: 100%;
+    align-items: center;
+    background-color: #4f5051;
+    height: 120px;
+    position: fixed;
+}
+
+.heading {
+   color:white;
+   font-size: 20px;
+   font-family: 'Patua One', serif;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.heading h1{
+    text-align: center;
+}
+
+.search-icon{
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 5px;
+    background-color: #313131;
+    margin-left: 892px;
+}
+
+.search-icon:hover{
+    cursor:pointer;
+}
+
+.nav-bar{
+    display: flex;
+    display: sticky;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #cb4900;
+    padding-bottom: 17px;
+    padding-top: 20px;
+   
+}
+.nav-bar a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:700;
+}
+.nav-bar .active{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active{
+    text-decoration: none;
+}
+
+.heading img {
+    align-content: center;
+    padding-right: 10px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #cb4900;
+    bottom: 0;
+    position: fixed;
+    color: white;
+}
+
+.content1{
+    display: flex;
+}
+
+.content1 p{
+    font-size: 20px;
+    background-color: #cb4900;
+    margin: auto;
+    margin-top:150px;
+    width:850px;
+    color:white;
+    text-align: center;
+    border: black 2px solid;
+    box-shadow: 10px 5px 5px black;
+    padding: 17px;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+
+.content2 {
+    padding-top: 17px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border: black 2px solid;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: #cb4900;
+    font-size: 20px;
+}
+
+.content3 {
+    padding-top: 17px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border: black 2px solid;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: #cb4900;
+    font-size: 20px;
+}
+
+.content4 {
+    padding-top: 17px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 50px;
+    border: black 2px solid;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+    width: 350px;
+    text-align: center;
+    color: white;
+    background-color: #cb4900;
+    font-size: 20px;
+}
+
+.joinus{
+    background-color: #cb4900;
+    color:white;
+    font-size: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:700;
+    width: 650px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 15px;
+    border: white 2px solid;
+    border-radius: 5px 20px 5px;
+}
+
+
+.content form{
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+fieldset{
+   background-color:#cb4900;
+   padding: 15px;
+   border: white 2px solid;
+   border-radius: 5px 20px 5px;
+   margin-bottom: 50px;
+}
+
+legend{
+    color: white;
+    background-color: #cb4900;
+    border: white 2px solid;
+    padding: 3px;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:700;
+}
+
+label{
+    color:white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight:700;
+}
+
+input{
+    border-color:white;
+}
+
+.icon1{
+    background-color: #cb4900;
+    color:white;
+    width: max-content;
+    position: absolute;
+    bottom: -7%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius:100%;
+}
+
+.icon2{
+    background-color: #cb4900;
+    color:white;
+    width: max-content;
+    position: absolute;
+    bottom: -7%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    border: white 2px solid;
+    border-radius:100%;
+}
+
+video{
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    border: white 2px solid;
+}
+
+.signup{
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup:hover{
+  background-color: #45a049;
+}
